@@ -1,3 +1,21 @@
 body {
+    margin: 0;
+    padding: 2rem 0;
+    width: 100%;
     background: black;
+    font-family: 'Inconsolata', monospace;
+    text-align: center;
+}
+
+main {
+    background: white;
+    width: 90%;
+    margin: auto;
+    border-radius: 5px;
+    padding: 2rem 0;
+}
+
+h1 {
+    margin: 3rem 1rem 4rem 1rem;
+    font-size: 80px;
 }

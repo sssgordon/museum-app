@@ -1,0 +1,69 @@
+html {
+    }
+
+body {
+    background: black;
+
+    margin: 0;
+    
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+#content {
+    background: white;
+    position: absolute;
+    bottom: 130px;
+    width: 100%;
+    z-index: -1;
+    padding-bottom: 20px;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+img {
+    max-width: 50%;
+    max-height: 450px;
+}
+
+#padding {
+    padding-right: 340px;
+}
+
+#muramasa {
+    background: white;
+    margin: 100px 430px;
+    border: solid black 10px;
+
+    position: relative;
+    bottom: -430px;
+    left: 350px;
+}
+
+h2 {
+    margin: 1rem auto;
+}
+
+.comment {
+    margin: 1rem auto;
+    border: solid black 1px;
+    border-radius: 5px;
+    width: 80%;
+}
+
+form {
+    margin: 1rem auto;
+    width: 80%;
+    min-width: 10rem;
+    padding: 1rem 0;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+}
+
+#Gordon {
+    font-size: 40px;
+    letter-spacing: 4px;
+}

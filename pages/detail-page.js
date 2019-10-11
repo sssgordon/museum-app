@@ -5,6 +5,10 @@ function submitComment() {
     const textarea = document.getElementById("msg")
     const msg = textarea.value
 
+    if (doesNotPassAllValidations(name, msg)) {
+        return null
+    }
+
     //create the elements you need
     const comment = document.createElement("section")
     const h3 = document.createElement("h3")
@@ -13,6 +17,9 @@ function submitComment() {
     // if (name[0] !== name[0].toUpperCase()) {
     //     name = name[0].toUpperCase() + name.slice(1)
     // }
+    if (name[0] !== name[0].toUpperCase()) {
+        name = name[0].toUpperCase() + name.slice(1)
+    }
 
     //adjust the elements we created
     h3.innerHTML = `${name} said:`
@@ -43,12 +50,8 @@ function submitComment() {
     // const commentSection = document.getElementById("comments")
     // commentSection.appendChild(comment)
     // }
-    if (doesNotPassAllValidations(name, msg)) {
-        return null
-    } else {
     const commentSection = document.getElementById("comments")
     commentSection.appendChild(comment)
-    }
 }
 
 // function doesNotPassAllValidations(name, msg) {
@@ -93,3 +96,4 @@ function doesNotPassAllValidations(name, msg) {
 
     return false
 }
+
